@@ -1,0 +1,11 @@
+C:\Git Repos\SQAT\SQAT\bin\Debug\SQAT.exe.config
+C:\Git Repos\SQAT\SQAT\bin\Debug\SQAT.exe
+C:\Git Repos\SQAT\SQAT\bin\Debug\SQAT.pdb
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.csprojAssemblyReference.cache
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.Properties.Resources.resources
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.csproj.GenerateResource.cache
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.csproj.CoreCompileInputs.cache
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.exe
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.pdb
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.passwordGate.resources
+C:\Git Repos\SQAT\SQAT\obj\Debug\SQAT.AdminPanel.resources
