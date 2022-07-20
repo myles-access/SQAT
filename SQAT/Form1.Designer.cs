@@ -35,21 +35,19 @@
             // tbPass
             // 
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPass.Location = new System.Drawing.Point(18, 18);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbPass.Location = new System.Drawing.Point(12, 12);
             this.tbPass.Name = "tbPass";
             this.tbPass.PasswordChar = '*';
-            this.tbPass.Size = new System.Drawing.Size(478, 62);
+            this.tbPass.Size = new System.Drawing.Size(320, 44);
             this.tbPass.TabIndex = 0;
             this.tbPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(18, 95);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.loginButton.Location = new System.Drawing.Point(12, 62);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(480, 80);
+            this.loginButton.Size = new System.Drawing.Size(320, 52);
             this.loginButton.TabIndex = 1;
             this.loginButton.Text = "Log In";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -57,13 +55,13 @@
             // 
             // passwordGate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AcceptButton = this.loginButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(510, 194);
+            this.ClientSize = new System.Drawing.Size(340, 126);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.tbPass);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "passwordGate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password";

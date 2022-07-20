@@ -14,10 +14,11 @@ namespace SQAT
 {
     public partial class AdminPanel : Form
     {
+        #region VARS
         //VARS
         public Dictionary<int, float> labourPrice = new Dictionary<int, float>();
         public Dictionary<string, float> basePrices = new Dictionary<string, float>();
-
+        #endregion
 
         public AdminPanel()
         {
@@ -198,6 +199,8 @@ namespace SQAT
             basePrices["14Scaffolds"] = float.Parse(tbScaffolds.Text);
             basePrices["15EntranceGuards"] = float.Parse(tbEntranceGuards.Text);
             basePrices["16CurrencyMargin"] = float.Parse(tbCurrencyMargin.Text);
+            basePrices["17LowestMargin"] = float.Parse(tbMinMargin.Text);
+            basePrices["18DefaultMargin"] = float.Parse(tbDefMargin.Text);
 
             //update labour costs dictionary values
             labourPrice[int.Parse("2")] = int.Parse(tbLabour2.Text);
@@ -238,6 +241,8 @@ namespace SQAT
             tbScaffolds.Text = basePrices["14Scaffolds"].ToString();
             tbEntranceGuards.Text = basePrices["15EntranceGuards"].ToString();
             tbCurrencyMargin.Text = basePrices["16CurrencyMargin"].ToString();
+            tbMinMargin.Text = basePrices["17LowestMargin"].ToString();
+            tbDefMargin.Text = basePrices["18DefaultMargin"].ToString();
 
             // update text boxes based on labour costs dictionary
             tbLabour2.Text = labourPrice[int.Parse("2")].ToString();
