@@ -820,7 +820,7 @@
             this.tbDefMargin.Location = new System.Drawing.Point(173, 644);
             this.tbDefMargin.Name = "tbDefMargin";
             this.tbDefMargin.Size = new System.Drawing.Size(147, 26);
-            this.tbDefMargin.TabIndex = 78;
+            this.tbDefMargin.TabIndex = 19;
             // 
             // tbMinMargin
             // 
@@ -828,7 +828,7 @@
             this.tbMinMargin.Location = new System.Drawing.Point(173, 612);
             this.tbMinMargin.Name = "tbMinMargin";
             this.tbMinMargin.Size = new System.Drawing.Size(147, 26);
-            this.tbMinMargin.TabIndex = 77;
+            this.tbMinMargin.TabIndex = 18;
             // 
             // AdminPanel
             // 

@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace SQAT
 {
@@ -18,6 +14,7 @@ namespace SQAT
         //VARS
         public Dictionary<int, float> labourPrice = new Dictionary<int, float>();
         public Dictionary<string, float> basePrices = new Dictionary<string, float>();
+        //readonly passwordGate f = Application.OpenForms.OfType<passwordGate>().Single();
         #endregion
 
         public AdminPanel()
@@ -31,6 +28,8 @@ namespace SQAT
             FetchBasePrices();
             FetchLabourPrices();
             SetTextToDict();
+
+            //f.Hide();
         }
 
 
@@ -262,8 +261,11 @@ namespace SQAT
             tbLabour16.Text = labourPrice[int.Parse("16")].ToString();
         }
 
+        #region Unused Methods
         private void label1_Click(object sender, EventArgs e) { }
         private void label33_Click(object sender, EventArgs e) { }
+        #endregion
+
     }
 }
 

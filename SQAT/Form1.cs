@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SQAT
@@ -19,6 +12,14 @@ namespace SQAT
         public passwordGate()
         {
             InitializeComponent();
+
+            //set to true to bypass password gate 
+            if (false)
+            {
+                AdminPanel aP = new AdminPanel();
+                aP.Show();
+                Hide();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
