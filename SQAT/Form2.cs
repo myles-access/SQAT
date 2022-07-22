@@ -17,6 +17,7 @@ namespace SQAT
         //readonly passwordGate f = Application.OpenForms.OfType<passwordGate>().Single();
         #endregion
 
+        #region Load Methods
         public AdminPanel()
         {
             InitializeComponent();
@@ -31,8 +32,9 @@ namespace SQAT
 
             //f.Hide();
         }
+        #endregion
 
-
+        #region XML Methods
         private void FetchBasePrices()
         {
             string dKey = "";
@@ -66,6 +68,7 @@ namespace SQAT
             //MessageBox.Show("BASE");
             XMLR.Close();
         }
+
         private void FetchLabourPrices()
         {
             int dKey = 0;
@@ -95,42 +98,6 @@ namespace SQAT
                 }
             }
             XMLR.Close();
-        }
-
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            var mainForm = Application.OpenForms.OfType<passwordGate>().Single();
-            mainForm.CloseFormMethod();
-        }
-        void myForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            var mainForm = Application.OpenForms.OfType<passwordGate>().Single();
-            mainForm.CloseFormMethod();
-        }
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            SetTextToDict();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            btnSave.BackColor = Color.Red;
-            DialogResult dR = MessageBox.Show("Are you sure you wish to save?", "Save?", MessageBoxButtons.YesNo);
-            if (dR == DialogResult.Yes)
-            {
-                UpdateDict();
-                BasePricesXMLWriter();
-                LabourPricesXMLWriter();
-                MessageBox.Show("Saving Successful", "Success");
-            }
-            else
-            {
-                MessageBox.Show("Saving Failed", "Failed");
-            }
-            btnSave.BackColor = Color.LightGreen;
-
         }
 
         private void BasePricesXMLWriter()
@@ -176,6 +143,49 @@ namespace SQAT
             xmlWriter.WriteEndElement(); //Costs element end 
             xmlWriter.Close();
         }
+        #endregion
+
+        #region Button Click Methods
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            var mainForm = Application.OpenForms.OfType<passwordGate>().Single();
+            mainForm.CloseFormMethod();
+        }
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            SetTextToDict();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            btnSave.BackColor = Color.Red;
+            DialogResult dR = MessageBox.Show("Are you sure you wish to save?", "Save?", MessageBoxButtons.YesNo);
+            if (dR == DialogResult.Yes)
+            {
+                UpdateDict();
+                BasePricesXMLWriter();
+                LabourPricesXMLWriter();
+                MessageBox.Show("Saving Successful", "Success");
+            }
+            else
+            {
+                MessageBox.Show("Saving Failed", "Failed");
+            }
+            btnSave.BackColor = Color.LightGreen;
+
+        }
+        #endregion
+
+        #region Unused Methods
+        private void label1_Click(object sender, EventArgs e) { }
+        private void label33_Click(object sender, EventArgs e) { }
+        #endregion
+
+        void myForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var mainForm = Application.OpenForms.OfType<passwordGate>().Single();
+            mainForm.CloseFormMethod();
+        }    
 
         private void UpdateDict()
         {
@@ -260,12 +270,6 @@ namespace SQAT
             tbLabour15.Text = labourPrice[int.Parse("15")].ToString();
             tbLabour16.Text = labourPrice[int.Parse("16")].ToString();
         }
-
-        #region Unused Methods
-        private void label1_Click(object sender, EventArgs e) { }
-        private void label33_Click(object sender, EventArgs e) { }
-        #endregion
-
     }
 }
 
