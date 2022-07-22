@@ -185,7 +185,7 @@ namespace SQAT
         {
             var mainForm = Application.OpenForms.OfType<passwordGate>().Single();
             mainForm.CloseFormMethod();
-        }    
+        }
 
         private void UpdateDict()
         {
