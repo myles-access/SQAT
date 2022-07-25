@@ -15,12 +15,12 @@ namespace SQAT
             InitializeComponent();
 
             //set to true to bypass password gate 
-            if (bypass)
-            {
-                AdminPanel aP = new AdminPanel();
-              //  aP.Show();
-                tbPass.Visible = false;
-            }
+            //if (bypass)
+            //{
+            //    AdminPanel aP = new AdminPanel();
+            //  //  aP.Show();
+            //    tbPass.Visible = false;
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
