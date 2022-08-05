@@ -7,7 +7,7 @@ namespace SQAT
     {
         #region VARS
         private readonly string password = "LiftFix";
-        private readonly bool bypass = true;
+        private readonly bool bypass = false;
         #endregion
 
         public passwordGate()
